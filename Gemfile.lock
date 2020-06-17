@@ -1,19 +1,18 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    concurrent-ruby (1.0.5)
-    connection_pool (2.2.1)
+    connection_pool (2.2.3)
     mustermann (1.0.1)
     puma (3.11.2)
-    rack (2.0.4)
+    rack (2.1.4)
     rack-protection (2.0.0)
       rack
-    redis (4.0.1)
-    sidekiq (5.1.1)
-      concurrent-ruby (~> 1.0)
-      connection_pool (~> 2.2, >= 2.2.0)
+    redis (4.1.1)
+    sidekiq (5.2.9)
+      connection_pool (~> 2.2, >= 2.2.2)
+      rack (~> 2.0)
       rack-protection (>= 1.5.0)
-      redis (>= 3.3.5, < 5)
+      redis (>= 3.3.5, < 4.2)
     sinatra (2.0.0)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -26,7 +25,7 @@ PLATFORMS
 
 DEPENDENCIES
   puma
-  sidekiq (= 5.1.1)
+  sidekiq (= 5.2.9)
   sinatra
 
 BUNDLED WITH
